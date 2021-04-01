@@ -1,3 +1,23 @@
 <template>
-    
+    <div id='main'>
+        <lightning-input label="Name"
+                        value={teamWrapper.Name}
+                        type="text">
+        </lightning-input>
+        <lightning-combobox
+        name="teams"
+        label="Team"
+        value={defaultValue}
+        placeholder="Select  Team"
+        options={teamWrapper.options}>
+    </lightning-combobox>
+    <lightning-input label="Name"
+                        value={teamWrapper.Skills__c}
+                        type="text">
+        </lightning-input>
+    <lightning-button variant="brand" label="Brand" 
+    title="Primary action"
+     onclick={handleClick} class="slds-m-left_x-small">
+    </lightning-button>
+    </div>
 </template>
